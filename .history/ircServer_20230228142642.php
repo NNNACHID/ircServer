@@ -8,10 +8,9 @@ class IrcServer
     protected $networkPort = 9999;
     protected $socket;
     protected $socketRessources = [];
-    protected $pid;
+    protected $currentPid;
     protected $ppid;
     protected $ppids = [];
-    
     /**
      * Creation of  the socket
      */
@@ -59,9 +58,9 @@ class IrcServer
      */
     protected function log(string $message): void
     {
-        $prefix = $this->ppid === $this->pid ? '+' : '-';
+        $prefix = $this->ppid === $this->currentPid ? '+' : '-';
         $date = date('Y-m-d H:i:s');
-        printf("%s %s %' 6d -> %s\n", $prefix, $date, $this->pid, $message);
+        printf("%s %s % 6d -> %s\",)
 
     }
 }

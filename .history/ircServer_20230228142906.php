@@ -11,7 +11,6 @@ class IrcServer
     protected $pid;
     protected $ppid;
     protected $ppids = [];
-    
     /**
      * Creation of  the socket
      */

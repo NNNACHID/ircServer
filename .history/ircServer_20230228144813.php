@@ -15,6 +15,7 @@ class IrcServer
     /**
      * Creation of  the socket
      */
+    
     public function __construct()
     {
 
