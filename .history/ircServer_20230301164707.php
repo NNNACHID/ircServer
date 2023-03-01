@@ -17,7 +17,7 @@ class IrcServer
      */
     public function __construct()
     {
-        $this->log('Creation of the network socket');
+        $this->log('Irc server startup...');
     }
     
     /**

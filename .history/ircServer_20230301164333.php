@@ -17,7 +17,7 @@ class IrcServer
      */
     public function __construct()
     {
-        $this->log('Creation of the network socket');
+        
     }
     
     /**
@@ -34,7 +34,7 @@ class IrcServer
      */
     public function start()
     {
-        $this->log('Irc server startup...');
+
     }
 
     protected function manageMessage(): void
